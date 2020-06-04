@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>main</title>
+	<style>
+
+body{
+	background-image: url('배경.png');
+}
+
+
+		.main{
+  border: 1px solid;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	margin: 120px;
+		}
+
+		.m{
+	border: 1px solid;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0px;
+
+		}
+
+		#Micon{
+			border: 1px solid;
+			position: absolute;
+
+		}
+
+		.H{
+			display: none;
+			position: absolute;
+			border: 1px solid;
+		}
+
+
+
+//#Micon:hover + .H{
+display: block;
+}
+
+
+
+		#Mtext{
+			border: 1px solid;
+			position: relative;
+
+
+		}
+
+#gray{
+	position: absolute;
+
+}
+
+
+input[id="menuicon"]{
+	display: none;
+	padding: 10px;
+}
+input[id="menuicon"] + label{
+	display: block;
+	width: 40px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+input[id="menuicon"] + label span{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	border-radius: 30px;
+	background: white;
+	transition: all .35s;
+}
+input[id="menuicon"]+ label span:nth-child(1){
+	top : 0;
+}
+input[id="menuicon"] + label span:nth-child(2){
+	top : 50%;
+	transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3){
+	bottom : 0;
+}
+
+input[id="menuicon"]:checked + label span:nth-child(1){
+	top : 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2){
+	opacity: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3){
+	bottom : 50%;
+	transform: translateY(50%) rotate(-45deg);
+}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div class="m">
+		<img id="gray" src ="카테고리.png" >
+		<input type="checkbox" id="menuicon">
+		<label for="menuicon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+     <div class="H">
+			<img id="HBI" src="나오는카테고리.png">
+		</div>
+		<img id="Mtext" src="카테고리글씨.png" >
+	</div>
+<div class="main">
+	<img src="메인이미지.png">
+</div>
+
+
+
+</body>
+</html>
