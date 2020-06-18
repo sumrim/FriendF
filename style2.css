@@ -2,6 +2,8 @@
 
 
 
+
+
 .banner {font-family: 'AppleSDGothicNeoUL00'; 
 	     position:relative;
          display: inline-block;
@@ -14,7 +16,7 @@
 
 .banner span.text {position: absolute;
 	               top: 90%;
-	               left: 20%;
+	               left: 10%;
 	               right: 20%;
 	               transform: translateY(-50%);
 	               display: none;
@@ -50,4 +52,3 @@
 
 
 .banner:hover span.text{display: block;}
-
