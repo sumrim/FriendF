@@ -21,7 +21,7 @@
        font-size: 22px;}
 
 
-body {background-image: url(images/infor-choice.jpg);
+body {background-image: url(images/infor-choice.jpg) no-repeat;
       background-repeat: no-repeat;
       background-size: cover}
 
