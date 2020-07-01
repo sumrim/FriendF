@@ -20,6 +20,8 @@
        margin: 20px;
        font-size: 22px;}
 
+.paper {text-align: center;}
+
 
 body {background-image: url(images/infor-choice.jpg) no-repeat;
       background-repeat: no-repeat;
@@ -29,10 +31,11 @@ body {background-image: url(images/infor-choice.jpg) no-repeat;
 nav {float: right;}
 
 nav a {color: black;
-       text-decoration: none}
+       text-decoration: none;
+       padding: 10px;}
 
 nav ul li {display: inline-block;
-           padding: 15px;}
+           padding: 7px;}
 
 nav ul li a:hover {color: #BABABA;}
 
